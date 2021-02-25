@@ -1,0 +1,52 @@
+$width: 300px
+
+$link_color: #FDF5E6
+
+@media only screen and (max-width: 650px)
+    .sidebar
+        width: 100% !important
+        min-height: 0 !important
+
+        &__links
+            width: 100% !important
+            position: static !important
+
+        &__link
+            font-size: 1.4em !important
+
+        &__section-title
+            font-size: 1.5em !important
+
+.sidebar
+    width: $width
+    background-color:#318CE7
+    min-height: 100vh
+    z-index: 10
+
+    &__links
+        padding: 30px 10px 30px 30px
+        display: flex
+        flex-direction: column
+        position: fixed
+        left: 0
+        width: $width
+
+    &__link
+        color: $link_color
+        font-size: 1.5em
+        padding: 6px
+
+        &_active
+            background-color: #1880E7
+            border-radius: 5px
+
+    &__icon
+        height: 1.2em
+        margin-right: 7px
+
+    &__section-title
+        font-size: 1.7em
+        color: $link_color
+        font-weight: 600
+        margin-top: 15px
+        margin-bottom: 10px

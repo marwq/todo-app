@@ -1,0 +1,63 @@
+@media only screen and (max-width: 650px)
+    .list
+        &__header
+            position: static !important
+
+        &__container
+            padding-left: 10px !important
+            padding-right: 10px !important
+
+.list
+    flex-grow: 1
+
+    &__container
+        padding-left: 40px
+        padding-right: 40px
+
+    &__header
+        position: fixed
+        background-color: #fff
+        box-shadow: 0 3px 10px 0.5px #eee
+        padding-bottom: 20px
+        padding-top: 20px
+        width: 100%
+
+    &__title
+        font-size: 24px
+        font-weight: 600
+
+    &__todos
+        padding-top: 90px
+
+    &__icon
+        height: 1.5em
+
+    &__delete-btn
+        border: 0
+        background: 0
+        cursor: pointer
+        margin-left: 1em
+
+        &:focus
+            outline: 0
+
+    &__add-btn
+        cursor: pointer
+        border: 2px solid #318CE7
+            radius: 13px
+
+        background-color: #fff
+        color: #318CE7
+        padding: 7px
+        font-size: 1.2em
+        display: flex
+        align-content: center
+        margin-bottom: 20px
+
+        &:focus
+            outline: 0
+
+        img
+            height: 1.6em
+            margin-left: 0.3em
+

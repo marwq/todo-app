@@ -1,0 +1,39 @@
+$color: #71B8FF
+
+.todo
+    display: flex
+    align-items: center
+    margin-bottom: 5px
+    background-color: $color
+    padding: 3px
+    border-radius: 3px
+
+    &__checkbox
+        height: 1.3em
+        width: 1.8em
+    
+    &__input
+        border: 0
+        flex-basis: 3
+        background-color: $color
+        resize: none
+        flex-grow: 1
+        color: #fff
+
+        &:focus
+            outline: 0
+
+        &_checked
+            text-decoration: line-through
+
+    &__icon
+        height: 1em
+        width: 1em
+
+    &__delete-btn
+        cursor: pointer
+        background-color: $color
+        border: 0
+        
+        &:focus
+            outline: 0
